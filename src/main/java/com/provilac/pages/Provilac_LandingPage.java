@@ -9,7 +9,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import com.provilac.objrepository.LandingPage_ObjectRepository;
-import com.provilac.utilities.ExcelUtils;
+import com.provilac.utilities.ReadExcelUtils;
+import com.provilac.utilities.SelectUtils;
 
 public class Provilac_LandingPage extends LandingPage_ObjectRepository{
 
@@ -40,9 +41,13 @@ public class Provilac_LandingPage extends LandingPage_ObjectRepository{
 		return provilacLogo.isDisplayed();
 	}
 	
+	public String getLoginPageHeading() {
+		return heading.getText();
+	}
+	
 	public LoginPage getLoginPage() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		selectCity();
+		SelectUtils.selectCity(allCities, "Pune");
 		clickGuestUser();
 		clickLoginButton();
 		return new LoginPage(driver);
@@ -54,14 +59,13 @@ public class Provilac_LandingPage extends LandingPage_ObjectRepository{
 		ArrayList<String> actualCity = new ArrayList<>();
 		for (WebElement cities : allCities) {
 			String city = cities.getText();
-			System.out.println(city);
 			actualCity.add(city);
 		}
 		
 		ArrayList<String> expectedList = new ArrayList<>();
-		for(int i=7;i<=11;i++) {
+		for(int i=7;i<=12;i++) {
 			for(int j=0;j<1;j++) {
-				String expectedText = ExcelUtils.excelRead("DataTest", "Sheet1", i, j);
+				String expectedText = ReadExcelUtils.excelRead("DataTest", "Sheet1", i, j);
 				expectedList.add(expectedText);
 			}
 		}
@@ -84,7 +88,7 @@ public class Provilac_LandingPage extends LandingPage_ObjectRepository{
 		ArrayList<String> expectedList = new ArrayList<>();
 		for(int i=1;i<=4;i++) {
 			for(int j=0;j<1;j++) {
-				String expectedText = ExcelUtils.excelRead("DataTest", "Sheet1", i, j);
+				String expectedText = ReadExcelUtils.excelRead("DataTest", "Sheet1", i, j);
 				expectedList.add(expectedText);
 			}
 		}

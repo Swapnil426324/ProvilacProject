@@ -10,7 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import com.provilac.base.BaseClass;
 
 
-public class MyScreenshotUtils extends BaseClass{
+public class ScreenshotUtils extends BaseClass{
 
 	public static String getScreenshot(String testName) {
 

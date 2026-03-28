@@ -1,20 +1,17 @@
 package com.provilac.testcases;
 
 import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.provilac.base.BaseClass;
 import com.provilac.pages.LoginPage;
 import com.provilac.pages.Provilac_LandingPage;
-import com.provilac.utilities.ExcelUtils;
+import com.provilac.utilities.ReadConfigProperty;
 import com.provilac.utilities.ReadExcel;
-import com.provilac.utilities.ReadProperties;
 
 public class LoginTest extends BaseClass{
 	
@@ -32,7 +29,7 @@ public class LoginTest extends BaseClass{
 
 	@AfterMethod
 	public void tearDown() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 	@Test
@@ -43,7 +40,7 @@ public class LoginTest extends BaseClass{
 	@Test
 	public void verify_MobileError() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		Assert.assertEquals(lp.mobileError(ReadProperties.readConfig("invalidmobile")), "Please enter valid 10 digit mobile number.");
+		Assert.assertEquals(lp.mobileError(ReadConfigProperty.getInvalidMobileNumber()), "Please enter valid 10 digit mobile number.");
 	}
 	
 

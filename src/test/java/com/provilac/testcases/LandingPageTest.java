@@ -7,14 +7,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.provilac.base.BaseClass;
-import com.provilac.pages.LoginPage;
 import com.provilac.pages.Provilac_LandingPage;
 
 public class LandingPageTest extends BaseClass {
 
 	WebDriver driver;
 	Provilac_LandingPage plp = null;
-	LoginPage lp;
 	
 	@BeforeMethod
 	public void setUp() {
@@ -45,7 +43,7 @@ public class LandingPageTest extends BaseClass {
 	@Test(priority = 4)
 	public void verify_ClickLogin() {
 		plp.getLoginPage();
-		Assert.assertEquals(driver.getTitle(), "Provilac Farm Fresh Milk | Monthly Milk Subscription | Online Milk Delivery");
+		Assert.assertEquals(plp.getLoginPageHeading(), "Get started");
 	}
 	
 	@Test(priority = 5)

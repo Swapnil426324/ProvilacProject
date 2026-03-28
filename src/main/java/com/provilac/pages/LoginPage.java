@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.provilac.objrepository.LoginPage_ObjectRepository;
-import com.provilac.utilities.ReadProperties;
+import com.provilac.utilities.ReadConfigProperty;
 
 public class LoginPage extends LoginPage_ObjectRepository{
 
@@ -49,9 +49,9 @@ public class LoginPage extends LoginPage_ObjectRepository{
 	
 	public String invalid_OTP() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		typeMobileNumber(ReadProperties.readConfig("mobile"));
+		typeMobileNumber(ReadConfigProperty.getMobileNumber());
 		click_mobile_BTN();
-		otpInputBox.sendKeys(ReadProperties.readConfig("invalidOTP"));
+		otpInputBox.sendKeys(ReadConfigProperty.getInvalidOTP());
 		clickVerifyOTP_BTN();
 		Alert al =driver.switchTo().alert();
 		String actualText = al.getText();
@@ -62,14 +62,15 @@ public class LoginPage extends LoginPage_ObjectRepository{
 	
 	public void enter_Valid_OTP() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		typeMobileNumber(ReadProperties.readConfig("mobile"));
+		typeMobileNumber(ReadConfigProperty.getMobileNumber());
 		click_mobile_BTN();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter OTP : ");
 		String otp = sc.next();
 		otpInputBox.sendKeys(otp);
-		clickVerifyOTP_BTN();
 		sc.close();
+		clickVerifyOTP_BTN();
+		
 	}
 	
 	

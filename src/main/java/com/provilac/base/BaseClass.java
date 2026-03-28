@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import com.provilac.utilities.ReadProperties;
+import com.provilac.utilities.ReadConfigProperty;
 
 public class BaseClass {
 
@@ -15,13 +15,13 @@ public class BaseClass {
 
 	public void lanchingApplication() {
 		logger.info("lunching an application");
-		driver.get(ReadProperties.readConfig("url"));
+		driver.get(ReadConfigProperty.getAppURL());
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 	}
 
 	public WebDriver initialization() {
-		String browser = ReadProperties.readConfig("browser");
+		String browser = ReadConfigProperty.readProperty("browser");
 		logger.info("Initializing browser with name :- " + browser);
 
 		if (browser.equalsIgnoreCase("chrome")) {

@@ -8,7 +8,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-public class ExcelUtils {
+public class ReadExcelUtils {
 
 	// for reading all excel sheet using POI
 		public static String readExcel(String fileName, String sheet) throws Exception {

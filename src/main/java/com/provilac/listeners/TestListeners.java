@@ -9,7 +9,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.provilac.base.BaseClass;
 import com.provilac.utilities.MyExtentReport;
-import com.provilac.utilities.MyScreenshotUtils;
+import com.provilac.utilities.ScreenshotUtils;
 
 
 public class TestListeners extends BaseClass implements ITestListener{
@@ -35,7 +35,7 @@ public class TestListeners extends BaseClass implements ITestListener{
 		logger.info("Test case failed "+result.getName());
 		test.log(Status.FAIL, "test case failed "+result.getName());
 		test.log(Status.FAIL, "Reason: " + result.getThrowable());
-		String screenshotPath = MyScreenshotUtils.getScreenshot(result.getName());
+		String screenshotPath = ScreenshotUtils.getScreenshot(result.getName());
 		test.addScreenCaptureFromPath(screenshotPath);
 	}
 

@@ -1,21 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-27T12:52:46 IST" name="Default suite" finished-at="2026-03-27T12:53:48 IST" duration-ms="62153">
+  <suite started-at="2026-03-28T16:45:08 IST" name="Provilac_Webside" finished-at="2026-03-28T16:49:06 IST" duration-ms="237822">
     <groups>
     </groups>
-    <test started-at="2026-03-27T12:52:46 IST" name="Default test" finished-at="2026-03-27T12:53:48 IST" duration-ms="62153">
+    <test started-at="2026-03-28T16:45:08 IST" name="Test" finished-at="2026-03-28T16:49:06 IST" duration-ms="237822">
       <class name="com.provilac.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@4eed46ee]" started-at="2026-03-27T12:52:49 IST" name="setUp" finished-at="2026-03-27T12:53:09 IST" duration-ms="19833" status="PASS">
+        <test-method signature="verify_Invalid_OTP()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:46:25 IST" name="verify_Invalid_OTP" finished-at="2026-03-28T16:46:41 IST" duration-ms="16005" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : You have reached maximum number of OTP requests for 8698326199. Please try after some time.}
+  (Session info: chrome=146.0.7680.165): You have reached maximum number of OTP requests for 8698326199. Please try after some time.
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23a5dc39a5600f8f5619a5b2486bdc6d, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51054}, goog:processID: 11336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51054/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23a5dc39a5600f8f5619a5b2486bdc6d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You have reached maximum number of OTP requests for 8698326199. Please try after some time.}
+  (Session info: chrome=146.0.7680.165): You have reached maximum number of OTP requests for 8698326199. Please try after some time.
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23a5dc39a5600f8f5619a5b2486bdc6d, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51054}, goog:processID: 11336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51054/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23a5dc39a5600f8f5619a5b2486bdc6d
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:333)
+at com.provilac.utilities.ScreenshotUtils.getScreenshot(ScreenshotUtils.java:22)
+at com.provilac.listeners.TestListeners.onTestFailure(TestListeners.java:38)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:115)
+at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Invalid_OTP -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:46:25 IST" name="setUp" finished-at="2026-03-28T16:46:40 IST" duration-ms="15023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_mobile(java.lang.String,java.lang.String)[pri:0, instance:com.provilac.testcases.LoginTest@4eed46ee]" started-at="2026-03-27T12:53:09 IST" name="verify_mobile" data-provider="mobile" finished-at="2026-03-27T12:53:20 IST" duration-ms="10793" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:46:41 IST" name="setUp" finished-at="2026-03-28T16:46:59 IST" duration-ms="17832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_MobileError()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:46:59 IST" name="verify_MobileError" finished-at="2026-03-28T16:47:00 IST" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_MobileError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:47:00 IST" name="tearDown" finished-at="2026-03-28T16:47:01 IST" duration-ms="1129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:47:01 IST" name="setUp" finished-at="2026-03-28T16:47:23 IST" duration-ms="21349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_Privacy_Policy()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:47:23 IST" name="verify_Privacy_Policy" finished-at="2026-03-28T16:47:23 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Privacy_Policy -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:47:23 IST" name="tearDown" finished-at="2026-03-28T16:47:23 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:47:24 IST" name="setUp" finished-at="2026-03-28T16:47:42 IST" duration-ms="18223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_mobile(java.lang.String,java.lang.String)[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:47:42 IST" name="verify_mobile" data-provider="mobile" finished-at="2026-03-28T16:47:46 IST" duration-ms="3678" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[.]]>
+                <![CDATA[ ]]>
               </value>
             </param>
             <param index="1">
@@ -24,35 +115,75 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_mobile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:47:46 IST" name="tearDown" finished-at="2026-03-28T16:47:46 IST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:47:46 IST" name="setUp" finished-at="2026-03-28T16:48:07 IST" duration-ms="20414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_mobile(java.lang.String,java.lang.String)[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:48:07 IST" name="verify_mobile" data-provider="mobile" finished-at="2026-03-28T16:48:07 IST" duration-ms="637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123546]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Please enter valid 10 digit mobile number.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_mobile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:48:07 IST" name="tearDown" finished-at="2026-03-28T16:48:08 IST" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:48:08 IST" name="setUp" finished-at="2026-03-28T16:48:30 IST" duration-ms="22142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_referralCodeInputBox()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:48:30 IST" name="verify_referralCodeInputBox" finished-at="2026-03-28T16:48:30 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_referralCodeInputBox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:48:30 IST" name="tearDown" finished-at="2026-03-28T16:48:31 IST" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:48:31 IST" name="setUp" finished-at="2026-03-28T16:48:48 IST" duration-ms="17554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_validOTP()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:48:48 IST" name="verify_validOTP" finished-at="2026-03-28T16:49:05 IST" duration-ms="16759" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Please enter')]"}
-  (Session info: chrome=146.0.7680.165)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[unexpected alert open: {Alert text : You have reached maximum number of OTP requests for 8698326199. Please try after some time.}
+  (Session info: chrome=146.0.7680.165): You have reached maximum number of OTP requests for 8698326199. Please try after some time.
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ea6685272642701e5148d03bfe0e267c, findElement {value=//div[contains(text(),'Please enter')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63661}, goog:processID: 3104, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63661/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ea6685272642701e5148d03bfe0e267c]]>
+Command: [799599fb6866bf0f08319ae41d8338e5, findElement {using=xpath, value=//input[@placeholder='Enter Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51710}, goog:processID: 8404, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51710/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 799599fb6866bf0f08319ae41d8338e5]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Please enter')]"}
-  (Session info: chrome=146.0.7680.165)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You have reached maximum number of OTP requests for 8698326199. Please try after some time.}
+  (Session info: chrome=146.0.7680.165): You have reached maximum number of OTP requests for 8698326199. Please try after some time.
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ea6685272642701e5148d03bfe0e267c, findElement {value=//div[contains(text(),'Please enter')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63661}, goog:processID: 3104, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63661/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ea6685272642701e5148d03bfe0e267c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+Command: [799599fb6866bf0f08319ae41d8338e5, findElement {using=xpath, value=//input[@placeholder='Enter Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51710}, goog:processID: 8404, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51710/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 799599fb6866bf0f08319ae41d8338e5
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
@@ -64,9 +195,13 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-at com.provilac.pages.LoginPage.checkMobileError(LoginPage.java:89)
-at com.provilac.testcases.LoginTest.verify_mobile(LoginTest.java:69)
+at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at com.provilac.pages.LoginPage.checkSetupProfileText(LoginPage.java:80)
+at com.provilac.testcases.LoginTest.verify_validOTP(LoginTest.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -97,39 +232,77 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_mobile -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@4eed46ee]" started-at="2026-03-27T12:53:20 IST" name="tearDown" finished-at="2026-03-27T12:53:20 IST" duration-ms="28" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@4eed46ee]" started-at="2026-03-27T12:53:20 IST" name="setUp" finished-at="2026-03-27T12:53:47 IST" duration-ms="27276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verify_mobile(java.lang.String,java.lang.String)[pri:0, instance:com.provilac.testcases.LoginTest@4eed46ee]" started-at="2026-03-27T12:53:47 IST" name="verify_mobile" data-provider="mobile" finished-at="2026-03-27T12:53:48 IST" duration-ms="1013" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[123546]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please enter valid 10 digit mobile number.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_mobile -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@4eed46ee]" started-at="2026-03-27T12:53:48 IST" name="tearDown" finished-at="2026-03-27T12:53:48 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- verify_validOTP -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-03-28T16:49:05 IST" name="tearDown" finished-at="2026-03-28T16:49:06 IST" duration-ms="654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.provilac.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.provilac.testcases.LandingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:45:09 IST" name="setUp" finished-at="2026-03-28T16:45:24 IST" duration-ms="14792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_provilacLogo()[pri:1, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:45:24 IST" name="verify_provilacLogo" finished-at="2026-03-28T16:45:24 IST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_provilacLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:45:24 IST" name="tearDown" finished-at="2026-03-28T16:45:24 IST" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:45:24 IST" name="setUp" finished-at="2026-03-28T16:45:38 IST" duration-ms="13756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_checkNavItem()[pri:2, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:45:38 IST" name="verify_checkNavItem" finished-at="2026-03-28T16:45:41 IST" duration-ms="2591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_checkNavItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:45:41 IST" name="tearDown" finished-at="2026-03-28T16:45:42 IST" duration-ms="769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:45:42 IST" name="setUp" finished-at="2026-03-28T16:45:55 IST" duration-ms="13246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_checkAllCitiesName()[pri:3, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:45:55 IST" name="verify_checkAllCitiesName" finished-at="2026-03-28T16:45:56 IST" duration-ms="867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_checkAllCitiesName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:45:56 IST" name="tearDown" finished-at="2026-03-28T16:45:56 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:45:56 IST" name="setUp" finished-at="2026-03-28T16:46:10 IST" duration-ms="14263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_ClickLogin()[pri:4, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:46:10 IST" name="verify_ClickLogin" finished-at="2026-03-28T16:46:12 IST" duration-ms="1601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClickLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:46:12 IST" name="tearDown" finished-at="2026-03-28T16:46:12 IST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:46:12 IST" name="setUp" finished-at="2026-03-28T16:46:25 IST" duration-ms="12114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_MoveToDropdown()[pri:5, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:46:25 IST" name="verify_MoveToDropdown" finished-at="2026-03-28T16:46:25 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_MoveToDropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-03-28T16:46:25 IST" name="tearDown" finished-at="2026-03-28T16:46:25 IST" duration-ms="565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.provilac.testcases.LandingPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Provilac_Webside -->
 </testng-results>
