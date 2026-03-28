@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import com.provilac.objrepository.LandingPage_ObjectRepository;
+import com.provilac.utilities.ReadConfigProperty;
 import com.provilac.utilities.ReadExcelUtils;
 import com.provilac.utilities.SelectUtils;
 
@@ -47,7 +48,7 @@ public class Provilac_LandingPage extends LandingPage_ObjectRepository{
 	
 	public LoginPage getLoginPage() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		SelectUtils.selectCity(allCities, "Pune");
+		SelectUtils.selectCity(allCities, ReadConfigProperty.selectCity());
 		clickGuestUser();
 		clickLoginButton();
 		return new LoginPage(driver);

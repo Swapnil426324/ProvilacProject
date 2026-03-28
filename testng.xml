@@ -6,7 +6,7 @@
 	<!-- 	<listener class-name="com.provilac.listeners.SetRetryListener"></listener>  -->
 	</listeners>
 
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="Provilac_Test">
 		<classes>
 			<class name="com.provilac.testcases.LandingPageTest" />
 			<class name="com.provilac.testcases.LoginTest" />
