@@ -103,9 +103,13 @@ public class Provilac_LandingPage extends LandingPage_ObjectRepository{
 	
 	
 	public void moveToAllDropwon() {
+		SelectUtils.selectCity(allCities, ReadConfigProperty.selectCity());
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		clickGuestUser();
 		Actions act = new Actions(driver);
-		for (WebElement ele : allDropdown) {
-			act.moveToElement(ele).pause(2000).build().perform();
+		for (WebElement dropdownList : allDropdown) {
+			act.moveToElement(dropdownList).pause(2000).build().perform();
+			System.out.println("dropdownList >> "+dropdownList.getText());
 		}
 	}
 	

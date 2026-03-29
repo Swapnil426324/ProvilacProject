@@ -11,7 +11,7 @@ public class LoginPage_ObjectRepository {
 	@FindBy(xpath = "//button[@id='otp-btn']")
 	protected WebElement verifyMobileNumber;
 
-	@FindBy(xpath = "//input[@id='app-download-code']")
+	@FindBy(xpath = "//input[@inputmode='numeric']")
 	protected WebElement otpInputBox;
 	
 	@FindBy(xpath = "//button[@class='retry-btn-outline-primary-orange']")

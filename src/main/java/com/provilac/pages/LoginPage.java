@@ -29,6 +29,10 @@ public class LoginPage extends LoginPage_ObjectRepository{
 	public void click_mobile_BTN() {
 		verifyMobileNumber.click();
 	}
+	
+	public void enterOTP(String otp) {
+		otpInputBox.sendKeys(otp);
+	}
 
 	public void clickVerifyOTP_BTN() {
 		verifyOTP_BTN.click();
@@ -51,7 +55,7 @@ public class LoginPage extends LoginPage_ObjectRepository{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		typeMobileNumber(ReadConfigProperty.getMobileNumber());
 		click_mobile_BTN();
-		otpInputBox.sendKeys(ReadConfigProperty.getInvalidOTP());
+		enterOTP(ReadConfigProperty.getInvalidOTP());
 		clickVerifyOTP_BTN();
 		Alert al =driver.switchTo().alert();
 		String actualText = al.getText();
@@ -67,7 +71,7 @@ public class LoginPage extends LoginPage_ObjectRepository{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter OTP : ");
 		String otp = sc.next();
-		otpInputBox.sendKeys(otp);
+		enterOTP(otp);
 		sc.close();
 		clickVerifyOTP_BTN();
 		
