@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.provilac.testcases.LandingPageTest">
+      <class name="com.provilac.testcases.LoginTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verify_MoveToDropdown"/>
+          <include name="tearDown"/>
+          <include name="verify_Invalid_OTP"/>
         </methods>
-      </class> <!-- com.provilac.testcases.LandingPageTest -->
+      </class> <!-- com.provilac.testcases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

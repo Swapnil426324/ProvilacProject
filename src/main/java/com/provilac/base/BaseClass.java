@@ -1,11 +1,14 @@
 package com.provilac.base;
 
+import java.time.Duration;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.provilac.exception.Browser_NullException;
 import com.provilac.utilities.ReadConfigProperty;
 
 public class BaseClass {
@@ -16,26 +19,26 @@ public class BaseClass {
 	public void lanchingApplication() {
 		logger.info("lunching an application");
 		driver.get(ReadConfigProperty.getAppURL());
-		driver.manage().window().maximize();
-		//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 	}
 
-	public WebDriver initialization() {
+	public WebDriver initialization() throws Exception {
 		String browser = ReadConfigProperty.readProperty("browser");
 		logger.info("Initializing browser with name :- " + browser);
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
-			lanchingApplication();
-			logger.info("Chrome browser initialize");
-			return driver;
-		} else if (browser.equalsIgnoreCase("firefox")) {
+		} 
+		else if (browser.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
-			lanchingApplication();
-			logger.info("firefox browser initialize");
-			return driver;
+		} 
+		else {
+			throw new Browser_NullException("Browser value is null in config file: " + browser);
 		}
-		return null;
 
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		lanchingApplication();
+		logger.info(browser + " browser initialized successfully");
+		return driver;
 	}
 }

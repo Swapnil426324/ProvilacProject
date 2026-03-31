@@ -15,38 +15,36 @@ import com.provilac.utilities.SelectUtils;
 
 public class Provilac_LandingPage extends LandingPage_ObjectRepository{
 
-	WebDriver driver;
+    WebDriver driver;
 	
 	public Provilac_LandingPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	public void selectCity() {
-		selectCity.click();
-	}
-	
-	public void clickCrossButton() {
-		crossButton.click();
-	}
-	
-	public void clickGuestUser() {
-		guestUser.click();
-	}
-	
-	public void clickLoginButton() {
-		clickLogin.click();
-	}
-	
+
+	//verify provilac logo
 	public boolean checkProvilacLogo() {
 		return provilacLogo.isDisplayed();
 	}
 	
+	
+	//click guest user
+	public void clickGuestUser() {
+		guestUser.click();
+	}
+	
+	//click log in button
+	public void clickLoginButton() {
+		clickLogin.click();
+	}
+	
+	// check login page header
 	public String getLoginPageHeading() {
 		return heading.getText();
 	}
 	
-	public LoginPage getLoginPage() {
+	// click login option
+	public LoginPage clickLoginOption() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		SelectUtils.selectCity(allCities, ReadConfigProperty.selectCity());
 		clickGuestUser();

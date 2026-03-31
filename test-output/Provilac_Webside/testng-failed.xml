@@ -9,21 +9,12 @@
       <class name="com.provilac.testcases.LoginTest">
         <methods>
           <include name="setUp"/>
+          <include name="verify_validOTP"/>
           <include name="tearDown"/>
           <include name="verify_Invalid_OTP"/>
           <include name="verify_mobile" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.provilac.testcases.LoginTest -->
-      <class name="com.provilac.testcases.LandingPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verify_MoveToDropdown"/>
-          <include name="verify_ClickLogin"/>
-          <include name="verify_checkAllCitiesName"/>
-          <include name="verify_checkNavItem"/>
-        </methods>
-      </class> <!-- com.provilac.testcases.LandingPageTest -->
     </classes>
   </test> <!-- Provilac_Test(failed) -->
 </suite> <!-- Failed suite [Provilac_Webside] -->
