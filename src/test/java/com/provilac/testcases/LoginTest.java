@@ -4,42 +4,25 @@ import java.util.Scanner;
 
 import org.openqa.selenium.Alert;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import com.provilac.base.BaseClass;
-import com.provilac.pages.LoginPage;
-import com.provilac.pages.Provilac_LandingPage;
+
+import com.provilac.tesebase.TestBase;
 import com.provilac.utilities.ReadConfigProperty;
 import com.provilac.utilities.ReadExcel;
 
-public class LoginTest extends BaseClass{
-	
-	Provilac_LandingPage plp;
-	LoginPage lp;
-	
-	@BeforeMethod
-	public void setUp() throws Exception {
-		driver = initialization();
-		plp = new Provilac_LandingPage(driver);
-		lp = plp.clickLoginOption();
-	}
+public class LoginTest extends TestBase{
 
-	@AfterMethod
-	public void tearDown() {
-		driver.quit();
-	}
-
-	
 	@Test(priority = 1, dataProvider = "mobile")
 	public void verify_mobile(String mobile, String result) {
+		lp = plp.clickLoginOption();
 		lp.enter_Mobile_Number(mobile);
 		Assert.assertEquals(lp.checkMobileErrorMSG(), result);
 	}
 	
 	@Test(priority = 2)
 	public void verify_Invalid_OTP() {
+		lp = plp.clickLoginOption();
 		lp.enter_Mobile_Number(ReadConfigProperty.getMobileNumber());
 		lp.click_mobileNumberWithOTP_BTN();
 		lp.enterOTP(ReadConfigProperty.getInvalidOTP());
@@ -53,6 +36,7 @@ public class LoginTest extends BaseClass{
 	
 	@Test(priority = 3)
 	public void verify_validOTP() {
+		lp = plp.clickLoginOption();
 		lp.enter_Mobile_Number(ReadConfigProperty.getMobileNumber());
 		lp.click_mobileNumberWithOTP_BTN();
 		Scanner sc = new Scanner(System.in);
@@ -66,11 +50,13 @@ public class LoginTest extends BaseClass{
 	
 	@Test(priority = 4)
 	public void verify_referralCodeInputBoxIsEnable() {
+		lp = plp.clickLoginOption();
 		Assert.assertTrue(lp.check_referralCodeInputbox());
 	}
 	
 	@Test(priority = 5)
 	public void verify_Privacy_Policy() {
+		lp = plp.clickLoginOption();
 		Assert.assertTrue(lp.check_Privacy_policy());
 	}
 	

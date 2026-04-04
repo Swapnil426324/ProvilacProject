@@ -6,8 +6,10 @@
       <class name="com.provilac.testcases.LoginTest">
         <methods>
           <include name="setUp"/>
+          <include name="verify_Privacy_Policy"/>
           <include name="tearDown"/>
           <include name="verify_Invalid_OTP"/>
+          <include name="verify_mobile" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.provilac.testcases.LoginTest -->
     </classes>

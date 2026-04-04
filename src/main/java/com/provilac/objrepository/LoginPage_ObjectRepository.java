@@ -3,7 +3,9 @@ package com.provilac.objrepository;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage_ObjectRepository {
+import com.provilac.base.BaseClass;
+
+public class LoginPage_ObjectRepository extends BaseClass{
 
 	@FindBy(xpath = "//input[@name='mobileNumber']")
 	protected WebElement mobileNumber;

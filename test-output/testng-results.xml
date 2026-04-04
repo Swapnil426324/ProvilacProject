@@ -1,78 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-31T19:31:17 IST" name="Default suite" finished-at="2026-03-31T19:31:17 IST" duration-ms="176">
+  <suite started-at="2026-04-04T17:11:08 IST" name="Provilac_Webside" finished-at="2026-04-04T17:16:33 IST" duration-ms="325507">
     <groups>
     </groups>
-    <test started-at="2026-03-31T19:31:17 IST" name="Default test" finished-at="2026-03-31T19:31:17 IST" duration-ms="176">
+    <test started-at="2026-04-04T17:11:08 IST" name="Provilac_Test" finished-at="2026-04-04T17:16:33 IST" duration-ms="325507">
       <class name="com.provilac.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@fd0e5b6]" started-at="2026-03-31T19:31:17 IST" name="setUp" finished-at="2026-03-31T19:31:17 IST" duration-ms="36" status="FAIL">
-          <exception class="com.provilac.exception.Browser_NullException">
-            <message>
-              <![CDATA[Browser value is null in config file: null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.provilac.exception.Browser_NullException: Browser value is null in config file: null
-at com.provilac.base.BaseClass.initialization(BaseClass.java:40)
-at com.provilac.testcases.LoginTest.setUp(LoginTest.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.provilac.exception.Browser_NullException -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:13:47 IST" name="setUp" finished-at="2026-04-04T17:14:16 IST" duration-ms="29848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_Invalid_OTP()[pri:2, instance:com.provilac.testcases.LoginTest@fd0e5b6]" started-at="2026-03-31T19:31:17 IST" name="verify_Invalid_OTP" finished-at="2026-03-31T19:31:17 IST" duration-ms="0" status="SKIP">
-          <exception class="com.provilac.exception.Browser_NullException">
+        <test-method signature="verify_mobile(java.lang.String,java.lang.String)[pri:1, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:14:16 IST" name="verify_mobile" data-provider="mobile" finished-at="2026-04-04T17:14:28 IST" duration-ms="11213" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Please enter mobile number.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Browser value is null in config file: null]]>
+              <![CDATA[element click intercepted: Element <a _ngcontent-serverapp-c3019143044="" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-item nav-link dropdown-toggle" style="border-right: none;">...</a> is not clickable at point (1241, 37). Other element would receive the click: <div class="loader-container" id="loader">...</div>
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c3fcd3e17bdae583e613325cb28a9a46, clickElement {id=f.9AD4F968DDAF1F569450502C2EE0E678.d.5D317224938C1E95F9ED4401E43EC71A.e.96}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49724}, goog:processID: 14984, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49724/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c3fcd3e17bdae583e613325cb28a9a46)] -> xpath: //a[normalize-space()='Guest']]
+Session ID: c3fcd3e17bdae583e613325cb28a9a46]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.provilac.exception.Browser_NullException: Browser value is null in config file: null
-at com.provilac.base.BaseClass.initialization(BaseClass.java:40)
-at com.provilac.testcases.LoginTest.setUp(LoginTest.java:24)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-serverapp-c3019143044="" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-item nav-link dropdown-toggle" style="border-right: none;">...</a> is not clickable at point (1241, 37). Other element would receive the click: <div class="loader-container" id="loader">...</div>
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c3fcd3e17bdae583e613325cb28a9a46, clickElement {id=f.9AD4F968DDAF1F569450502C2EE0E678.d.5D317224938C1E95F9ED4401E43EC71A.e.96}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49724}, goog:processID: 14984, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49724/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c3fcd3e17bdae583e613325cb28a9a46)] -> xpath: //a[normalize-space()='Guest']]
+Session ID: c3fcd3e17bdae583e613325cb28a9a46
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+at com.provilac.pages.Provilac_LandingPage.clickGuestUser(Provilac_LandingPage.java:32)
+at com.provilac.pages.Provilac_LandingPage.clickLoginOption(Provilac_LandingPage.java:49)
+at com.provilac.testcases.LoginTest.verify_mobile(LoginTest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -97,15 +99,292 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.provilac.exception.Browser_NullException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_mobile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:14:28 IST" name="tearDown" finished-at="2026-04-04T17:14:28 IST" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:14:28 IST" name="setUp" finished-at="2026-04-04T17:14:58 IST" duration-ms="29724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_mobile(java.lang.String,java.lang.String)[pri:1, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:14:58 IST" name="verify_mobile" data-provider="mobile" finished-at="2026-04-04T17:15:00 IST" duration-ms="2193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123546]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Please enter valid 10 digit mobile number.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_mobile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:15:00 IST" name="tearDown" finished-at="2026-04-04T17:15:01 IST" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:15:01 IST" name="setUp" finished-at="2026-04-04T17:15:09 IST" duration-ms="8108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_Invalid_OTP()[pri:2, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:15:09 IST" name="verify_Invalid_OTP" finished-at="2026-04-04T17:15:15 IST" duration-ms="6455" status="FAIL">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[no such alert
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a266aa6f5c8f5ef142e8ccc19c919ce, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49922}, goog:processID: 13688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49922/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a266aa6f5c8f5ef142e8ccc19c919ce]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a266aa6f5c8f5ef142e8ccc19c919ce, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49922}, goog:processID: 13688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49922/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a266aa6f5c8f5ef142e8ccc19c919ce
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1180)
+at com.provilac.testcases.LoginTest.verify_Invalid_OTP(LoginTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Invalid_OTP -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@fd0e5b6]" started-at="2026-03-31T19:31:17 IST" name="tearDown" finished-at="2026-03-31T19:31:17 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:15:16 IST" name="tearDown" finished-at="2026-04-04T17:15:16 IST" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:15:16 IST" name="setUp" finished-at="2026-04-04T17:15:44 IST" duration-ms="27410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_validOTP()[pri:3, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:15:44 IST" name="verify_validOTP" finished-at="2026-04-04T17:15:59 IST" duration-ms="15419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_validOTP -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:15:59 IST" name="tearDown" finished-at="2026-04-04T17:16:00 IST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:16:00 IST" name="setUp" finished-at="2026-04-04T17:16:06 IST" duration-ms="6731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_referralCodeInputBoxIsEnable()[pri:4, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:16:06 IST" name="verify_referralCodeInputBoxIsEnable" finished-at="2026-04-04T17:16:18 IST" duration-ms="11287" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a _ngcontent-serverapp-c3019143044="" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-item nav-link dropdown-toggle" style="border-right: none;">...</a> is not clickable at point (1241, 37). Other element would receive the click: <div class="loader-container" id="loader">...</div>
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [788bd84ff96b2eca1de4fd2d264dc471, clickElement {id=f.3E17696039F90F59A7B310943C27DFB2.d.6EB3AC7C6D8789BFD865FD649FBA2323.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50180}, goog:processID: 16096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50180/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (788bd84ff96b2eca1de4fd2d264dc471)] -> xpath: //a[normalize-space()='Guest']]
+Session ID: 788bd84ff96b2eca1de4fd2d264dc471]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-serverapp-c3019143044="" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-item nav-link dropdown-toggle" style="border-right: none;">...</a> is not clickable at point (1241, 37). Other element would receive the click: <div class="loader-container" id="loader">...</div>
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [788bd84ff96b2eca1de4fd2d264dc471, clickElement {id=f.3E17696039F90F59A7B310943C27DFB2.d.6EB3AC7C6D8789BFD865FD649FBA2323.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\SWAPNI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50180}, goog:processID: 16096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50180/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (788bd84ff96b2eca1de4fd2d264dc471)] -> xpath: //a[normalize-space()='Guest']]
+Session ID: 788bd84ff96b2eca1de4fd2d264dc471
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+at com.provilac.pages.Provilac_LandingPage.clickGuestUser(Provilac_LandingPage.java:32)
+at com.provilac.pages.Provilac_LandingPage.clickLoginOption(Provilac_LandingPage.java:49)
+at com.provilac.testcases.LoginTest.verify_referralCodeInputBoxIsEnable(LoginTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_referralCodeInputBoxIsEnable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:16:18 IST" name="tearDown" finished-at="2026-04-04T17:16:18 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:16:18 IST" name="setUp" finished-at="2026-04-04T17:16:28 IST" duration-ms="10028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_Privacy_Policy()[pri:5, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:16:28 IST" name="verify_Privacy_Policy" finished-at="2026-04-04T17:16:33 IST" duration-ms="4682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Privacy_Policy -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LoginTest@71e5f61d]" started-at="2026-04-04T17:16:33 IST" name="tearDown" finished-at="2026-04-04T17:16:33 IST" duration-ms="430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.provilac.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.provilac.testcases.LandingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:11:09 IST" name="setUp" finished-at="2026-04-04T17:11:21 IST" duration-ms="12458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_provilacLogo()[pri:1, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:11:21 IST" name="verify_provilacLogo" finished-at="2026-04-04T17:11:21 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_provilacLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:11:21 IST" name="tearDown" finished-at="2026-04-04T17:11:22 IST" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:11:22 IST" name="setUp" finished-at="2026-04-04T17:12:00 IST" duration-ms="38394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_checkNavItem()[pri:2, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:12:00 IST" name="verify_checkNavItem" finished-at="2026-04-04T17:12:03 IST" duration-ms="2541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_checkNavItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:12:03 IST" name="tearDown" finished-at="2026-04-04T17:12:03 IST" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:12:03 IST" name="setUp" finished-at="2026-04-04T17:12:26 IST" duration-ms="23055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_checkAllCitiesName()[pri:3, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:12:26 IST" name="verify_checkAllCitiesName" finished-at="2026-04-04T17:12:27 IST" duration-ms="624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_checkAllCitiesName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:12:27 IST" name="tearDown" finished-at="2026-04-04T17:12:27 IST" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:12:27 IST" name="setUp" finished-at="2026-04-04T17:12:57 IST" duration-ms="29328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_Click_Login_Button()[pri:4, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:12:57 IST" name="verify_Click_Login_Button" finished-at="2026-04-04T17:13:01 IST" duration-ms="4707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Click_Login_Button -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:13:01 IST" name="tearDown" finished-at="2026-04-04T17:13:02 IST" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:13:02 IST" name="setUp" finished-at="2026-04-04T17:13:29 IST" duration-ms="27484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_MoveToDropdown()[pri:5, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:13:29 IST" name="verify_MoveToDropdown" finished-at="2026-04-04T17:13:46 IST" duration-ms="16104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_MoveToDropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.provilac.testcases.LandingPageTest@5241cf67]" started-at="2026-04-04T17:13:46 IST" name="tearDown" finished-at="2026-04-04T17:13:46 IST" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.provilac.testcases.LandingPageTest -->
+    </test> <!-- Provilac_Test -->
+  </suite> <!-- Provilac_Webside -->
 </testng-results>

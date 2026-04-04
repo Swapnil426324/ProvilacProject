@@ -8,8 +8,8 @@
     <classes>
       <class name="com.provilac.testcases.LoginTest">
         <methods>
+          <include name="verify_referralCodeInputBoxIsEnable"/>
           <include name="setUp"/>
-          <include name="verify_validOTP"/>
           <include name="tearDown"/>
           <include name="verify_Invalid_OTP"/>
           <include name="verify_mobile" invocation-numbers="0"/>

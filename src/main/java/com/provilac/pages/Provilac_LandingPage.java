@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
+import com.provilac.base.BaseClass;
 import com.provilac.objrepository.LandingPage_ObjectRepository;
 import com.provilac.utilities.ReadConfigProperty;
 import com.provilac.utilities.ReadExcelUtils;
@@ -15,10 +16,8 @@ import com.provilac.utilities.SelectUtils;
 
 public class Provilac_LandingPage extends LandingPage_ObjectRepository{
 
-    WebDriver driver;
-	
 	public Provilac_LandingPage(WebDriver driver) {
-		this.driver = driver;
+		BaseClass.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 

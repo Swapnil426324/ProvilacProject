@@ -8,14 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.provilac.base.BaseClass;
 import com.provilac.objrepository.LoginPage_ObjectRepository;
 
 public class LoginPage extends LoginPage_ObjectRepository{
 
-	WebDriver driver;
-	
 	public LoginPage(WebDriver driver) {
-		this.driver = driver;
+	    BaseClass.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

@@ -1,43 +1,28 @@
 package com.provilac.utilities;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
 import com.provilac.base.BaseClass;
 
-
 public class ReadConfigProperty extends BaseClass {
 
-
-	public static File file;
-	public static FileInputStream fis;
-	public static Properties prop;
-	/*
-	 * public static String readConfig(String key) {
-	 * logger.info("Read the property file from Config file"); FileInputStream fis =
-	 * null; Properties prop = null; try { fis = new
-	 * FileInputStream(System.getProperty("user.dir") +
-	 * "/src/main/resources/Config.properties"); prop = new Properties();
-	 * prop.load(fis); } catch (Exception e) { e.printStackTrace(); }
-	 * 
-	 * return prop.getProperty(key); }
-	 */
-	static {
-
-		file = new File(System.getProperty("user.dir") + "/src/main/resources/Config.properties");
+	static FileInputStream fis = null;
+	static Properties prop = null;
+	
+	public static String readConfig(String key) {
 		try {
-			fis = new FileInputStream(file);
+			fis = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/Config.properties");
 			prop = new Properties();
 			prop.load(fis);
 		} catch (Exception e) {
-
 			e.printStackTrace();
 		}
+		return prop.getProperty(key);
 	}
 
 	public static String readProperty(String key) {
-		return prop.getProperty(key);
+		return readConfig(key);
 	}
 
 	public static String getChromeBrowser() {
@@ -65,17 +50,16 @@ public class ReadConfigProperty extends BaseClass {
 		return city;
 	}
 
-	
 	public static String getMobileNumber() {
 		String mobile = readProperty("mobile");
 		return mobile;
 	}
-	
+
 	public static String getInvalidMobileNumber() {
 		String invalidMobile = readProperty("invalidmobile");
 		return invalidMobile;
 	}
-	
+
 	public static String getInvalidOTP() {
 		String invalidOTP = readProperty("invalidOTP");
 		return invalidOTP;

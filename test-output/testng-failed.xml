@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Provilac_Webside]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.provilac.listeners.TestListeners"/>
+  </listeners>
+  <test thread-count="5" name="Provilac_Test(failed)">
     <classes>
       <class name="com.provilac.testcases.LoginTest">
         <methods>
+          <include name="verify_referralCodeInputBoxIsEnable"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="verify_Invalid_OTP"/>
+          <include name="verify_mobile" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.provilac.testcases.LoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Provilac_Test(failed) -->
+</suite> <!-- Failed suite [Provilac_Webside] -->
